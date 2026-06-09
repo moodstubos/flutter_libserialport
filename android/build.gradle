@@ -1,27 +1,14 @@
 group 'org.sigrok.flutter_libserialport'
 version '0.5.0-SNAPSHOT'
 
-buildscript {
-    ext.kotlin_version = '2.0.0'
-    repositories {
-        google()
-        //jcenter()
-        mavenCentral()
-        maven { url 'https://jitpack.io' }
-    }
+ext.kotlin_version = '2.0.0'
 
-    dependencies {
-        classpath 'com.android.tools.build:gradle:8.7.0'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-    }
-}
+
 
 rootProject.allprojects {
     repositories {
         google()
-        //jcenter()
         mavenCentral()
-        maven { url 'https://jitpack.io' }
     }
 }
 
